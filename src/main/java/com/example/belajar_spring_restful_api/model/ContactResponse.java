@@ -9,11 +9,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class WebResponse <T> {
+public class ContactResponse {
 
-    private T data;
 
-    private String errors;
+    private String id;
 
-    private PagingResponse paging;
+    private String firstName;
+
+    private String lastName;
+
+    private String email;
+
+    private String phone;
 }

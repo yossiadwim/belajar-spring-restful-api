@@ -1,5 +1,6 @@
 package com.example.belajar_spring_restful_api.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,11 +10,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class WebResponse <T> {
+public class AddressResponse {
 
-    private T data;
-
-    private String errors;
-
-    private PagingResponse paging;
+    private String id;
+    private String street;
+    private String city;
+    private String province;
+    private String country;
+    private String postalCode;
 }
